@@ -297,9 +297,7 @@ class OCTDenoiserPipeline:
 
 
 if __name__ == "__main__":
-   
-    INPUT_BASE = "/content/OCTID"              
-    PROCESSED_BASE = os.path.join("/content", "processed")
+
 
     CLASS_LIST = ['CSR','DR','MH','NORMAL']
 
@@ -314,3 +312,4 @@ if __name__ == "__main__":
     )
 
     pipeline.process_dataset(retrain_on_samples=50, epochs=20, save_metrics_csv=True)
+
